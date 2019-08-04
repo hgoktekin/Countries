@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KUx-86-JAK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-l8-1qb">
+                                <rect key="frame" x="142" y="354" width="130" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gMM-Vi-Tfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="CANADA">
+                                    <color key="titleColor" red="0.83748257160186768" green="0.19402098655700684" blue="0.17517268657684326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="canadaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdg-Et-onA"/>
+                                    <segue destination="vg1-DO-2Xo" kind="show" identifier="GoToCanada" id="LeD-lY-GGx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi4-GI-o2P">
+                                <rect key="frame" x="142" y="468" width="130" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="FRANCE">
+                                    <color key="titleColor" red="0.0092427162453532219" green="0.15264669060707092" blue="0.59190815687179565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="franceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vba-JC-Bnz"/>
+                                    <segue destination="u9s-BY-7PM" kind="show" identifier="GoToFrance" id="OQ3-SC-99T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wi4-GI-o2P" secondAttribute="bottom" constant="319" id="NPL-MJ-Rb8"/>
+                            <constraint firstItem="x4d-l8-1qb" firstAttribute="leading" secondItem="Wi4-GI-o2P" secondAttribute="leading" id="Vkx-4b-mOC"/>
+                            <constraint firstItem="x4d-l8-1qb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="266" id="XWx-ye-GLh"/>
+                            <constraint firstItem="Wi4-GI-o2P" firstAttribute="top" secondItem="x4d-l8-1qb" secondAttribute="bottom" constant="39" id="cNe-BD-OKD"/>
+                            <constraint firstItem="x4d-l8-1qb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="diB-gJ-TI9"/>
+                            <constraint firstItem="x4d-l8-1qb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="e8h-As-DK7"/>
+                            <constraint firstItem="x4d-l8-1qb" firstAttribute="trailing" secondItem="Wi4-GI-o2P" secondAttribute="trailing" id="vWv-wT-1ly"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PSP-O3-laA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="112.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="h9O-ZV-5tB">
+            <objects>
+                <viewController id="vg1-DO-2Xo" customClass="SecondViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Phb-zs-uhY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CANADA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-OS-Ax0">
+                                <rect key="frame" x="75" y="137" width="265" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="i7J-D4-l9V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.83748257160186768" green="0.19402098655700684" blue="0.17517268657684326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="canada-flag" translatesAutoresizingMaskIntoConstraints="NO" id="lNA-bU-0ZR">
+                                <rect key="frame" x="51" y="203" width="314" height="228"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Official Languages: French and English" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-N4-BPm">
+                                <rect key="frame" x="75" y="439" width="265" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="IIV-BQ-VM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Capital City: Ottawa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajK-0A-HeN">
+                                <rect key="frame" x="75" y="530" width="265" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="fP9-Ti-V9Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Population: 37,06 million" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA0-Gr-fmj">
+                                <rect key="frame" x="75" y="612" width="265" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="ogY-w9-gd1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prime Minister: Justin Trudeau" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkY-0s-QCR">
+                                <rect key="frame" x="51" y="694" width="314" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="oUK-qw-WCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LPF-OS-Ax0" firstAttribute="trailing" secondItem="HKj-N4-BPm" secondAttribute="trailing" id="4Y3-DC-rhm"/>
+                            <constraint firstItem="WA0-Gr-fmj" firstAttribute="centerX" secondItem="DkY-0s-QCR" secondAttribute="centerX" id="4ca-jO-TNO"/>
+                            <constraint firstItem="HKj-N4-BPm" firstAttribute="top" secondItem="lNA-bU-0ZR" secondAttribute="bottom" constant="8" symbolic="YES" id="5iQ-fS-wlY"/>
+                            <constraint firstItem="lNA-bU-0ZR" firstAttribute="leading" secondItem="I5F-Ln-s39" secondAttribute="leading" constant="51" id="61o-0p-ffW"/>
+                            <constraint firstItem="I5F-Ln-s39" firstAttribute="bottom" secondItem="DkY-0s-QCR" secondAttribute="bottom" constant="94" id="6aU-tI-ZMZ"/>
+                            <constraint firstItem="ajK-0A-HeN" firstAttribute="leading" secondItem="WA0-Gr-fmj" secondAttribute="leading" id="834-5M-pDM"/>
+                            <constraint firstItem="DkY-0s-QCR" firstAttribute="top" secondItem="WA0-Gr-fmj" secondAttribute="bottom" constant="8" symbolic="YES" id="A5A-iv-gNm"/>
+                            <constraint firstItem="HKj-N4-BPm" firstAttribute="leading" secondItem="ajK-0A-HeN" secondAttribute="leading" id="MoH-VA-BHd"/>
+                            <constraint firstItem="lNA-bU-0ZR" firstAttribute="leading" secondItem="DkY-0s-QCR" secondAttribute="leading" id="NsG-N4-VYv"/>
+                            <constraint firstItem="HKj-N4-BPm" firstAttribute="trailing" secondItem="ajK-0A-HeN" secondAttribute="trailing" id="Ycd-2I-R1n"/>
+                            <constraint firstItem="LPF-OS-Ax0" firstAttribute="centerX" secondItem="Phb-zs-uhY" secondAttribute="centerX" id="Yg0-nd-guP"/>
+                            <constraint firstItem="lNA-bU-0ZR" firstAttribute="top" secondItem="I5F-Ln-s39" secondAttribute="top" constant="115" id="gQb-ML-Ij1"/>
+                            <constraint firstItem="ajK-0A-HeN" firstAttribute="top" secondItem="HKj-N4-BPm" secondAttribute="bottom" constant="8" symbolic="YES" id="iil-4N-eaV"/>
+                            <constraint firstItem="lNA-bU-0ZR" firstAttribute="trailing" secondItem="DkY-0s-QCR" secondAttribute="trailing" id="rgo-V4-fSW"/>
+                            <constraint firstItem="ajK-0A-HeN" firstAttribute="trailing" secondItem="WA0-Gr-fmj" secondAttribute="trailing" id="syw-mi-9ZV"/>
+                            <constraint firstItem="LPF-OS-Ax0" firstAttribute="leading" secondItem="HKj-N4-BPm" secondAttribute="leading" id="tRT-vE-sqM"/>
+                            <constraint firstItem="LPF-OS-Ax0" firstAttribute="top" secondItem="I5F-Ln-s39" secondAttribute="top" constant="49" id="uQS-LL-m0t"/>
+                            <constraint firstItem="WA0-Gr-fmj" firstAttribute="top" secondItem="ajK-0A-HeN" secondAttribute="bottom" constant="8" symbolic="YES" id="vfh-ob-Gsw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I5F-Ln-s39"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sdG-BW-Xk5"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="ajK-0A-HeN" id="LYk-GI-bsy"/>
+                        <outlet property="flagView" destination="lNA-bU-0ZR" id="ggE-z0-SFS"/>
+                        <outlet property="languageLabel" destination="HKj-N4-BPm" id="KlK-iL-kh5"/>
+                        <outlet property="popLabel" destination="WA0-Gr-fmj" id="6cN-VA-nXr"/>
+                        <outlet property="preLabel" destination="DkY-0s-QCR" id="eTg-6I-OAa"/>
+                        <outlet property="titleLabel" destination="LPF-OS-Ax0" id="0WW-LW-wNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VX-My-9Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585.5072463768117" y="112.5"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="ory-y4-hxh">
+            <objects>
+                <viewController id="u9s-BY-7PM" customClass="ThirdViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNG-Y5-e5G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FRANCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-xT-Nrk">
+                                <rect key="frame" x="75" y="135" width="265" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="4ae-9K-w60"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0092427162453532219" green="0.15264669060707092" blue="0.59190815687179565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="francais" translatesAutoresizingMaskIntoConstraints="NO" id="NN0-R3-9RC">
+                                <rect key="frame" x="75" y="210" width="265" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Official Languages: French and English" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpu-lK-FU1">
+                                <rect key="frame" x="75" y="437" width="265" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="o2G-JE-SqN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Capital City: Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8z-QD-kER">
+                                <rect key="frame" x="75" y="528" width="265" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="3po-PA-Q7R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Population: 66,99 million" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wT0-f2-kWu">
+                                <rect key="frame" x="75" y="610" width="265" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="r26-e6-caa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="President: Emmanuel Macron" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lq-Mu-T5m">
+                                <rect key="frame" x="51" y="692" width="313" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Ooy-ma-XM4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NN0-R3-9RC" firstAttribute="top" secondItem="K9s-xT-Nrk" secondAttribute="bottom" constant="8" symbolic="YES" id="0l0-WN-tVP"/>
+                            <constraint firstItem="K9s-xT-Nrk" firstAttribute="trailing" secondItem="NN0-R3-9RC" secondAttribute="trailing" id="1WU-US-62E"/>
+                            <constraint firstItem="NN0-R3-9RC" firstAttribute="trailing" secondItem="zpu-lK-FU1" secondAttribute="trailing" id="2qD-HZ-DNa"/>
+                            <constraint firstItem="zpu-lK-FU1" firstAttribute="leading" secondItem="g8z-QD-kER" secondAttribute="leading" id="3NK-7P-zim"/>
+                            <constraint firstItem="wT0-f2-kWu" firstAttribute="top" secondItem="g8z-QD-kER" secondAttribute="bottom" constant="8" symbolic="YES" id="4vo-YJ-x8p"/>
+                            <constraint firstItem="5Lq-Mu-T5m" firstAttribute="leading" secondItem="7j6-Jb-X6K" secondAttribute="leading" constant="51" id="7QZ-Zz-evy"/>
+                            <constraint firstItem="K9s-xT-Nrk" firstAttribute="leading" secondItem="7j6-Jb-X6K" secondAttribute="leading" constant="75" id="BwG-py-IoW"/>
+                            <constraint firstItem="g8z-QD-kER" firstAttribute="top" secondItem="zpu-lK-FU1" secondAttribute="bottom" constant="8" symbolic="YES" id="CQ5-mt-7Hn"/>
+                            <constraint firstItem="wT0-f2-kWu" firstAttribute="centerX" secondItem="5Lq-Mu-T5m" secondAttribute="centerX" id="JDF-c8-bkd"/>
+                            <constraint firstItem="5Lq-Mu-T5m" firstAttribute="top" secondItem="wT0-f2-kWu" secondAttribute="bottom" constant="8" symbolic="YES" id="Kjz-bF-4LI"/>
+                            <constraint firstItem="zpu-lK-FU1" firstAttribute="trailing" secondItem="g8z-QD-kER" secondAttribute="trailing" id="M5Y-nV-Mbc"/>
+                            <constraint firstItem="7j6-Jb-X6K" firstAttribute="bottom" secondItem="5Lq-Mu-T5m" secondAttribute="bottom" constant="96" id="SBG-x4-NVm"/>
+                            <constraint firstItem="zpu-lK-FU1" firstAttribute="top" secondItem="NN0-R3-9RC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vqk-80-mBN"/>
+                            <constraint firstItem="K9s-xT-Nrk" firstAttribute="centerX" secondItem="wNG-Y5-e5G" secondAttribute="centerX" id="Z9r-sc-QLt"/>
+                            <constraint firstItem="K9s-xT-Nrk" firstAttribute="leading" secondItem="NN0-R3-9RC" secondAttribute="leading" id="ajw-GL-WBD"/>
+                            <constraint firstItem="g8z-QD-kER" firstAttribute="trailing" secondItem="wT0-f2-kWu" secondAttribute="trailing" id="bc2-L4-dp6"/>
+                            <constraint firstItem="g8z-QD-kER" firstAttribute="leading" secondItem="wT0-f2-kWu" secondAttribute="leading" id="bmm-5E-1dT"/>
+                            <constraint firstItem="NN0-R3-9RC" firstAttribute="leading" secondItem="zpu-lK-FU1" secondAttribute="leading" id="dMm-zH-0Ku"/>
+                            <constraint firstItem="K9s-xT-Nrk" firstAttribute="top" secondItem="7j6-Jb-X6K" secondAttribute="top" constant="47" id="dzB-BD-hBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7j6-Jb-X6K"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="g8z-QD-kER" id="LDu-Up-AVU"/>
+                        <outlet property="flagView" destination="NN0-R3-9RC" id="a44-Bp-OcV"/>
+                        <outlet property="languageLabel" destination="zpu-lK-FU1" id="vPr-qS-7J6"/>
+                        <outlet property="popLabel" destination="wT0-f2-kWu" id="Ehg-Vy-HBw"/>
+                        <outlet property="proLabel" destination="5Lq-Mu-T5m" id="lPg-BK-h6I"/>
+                        <outlet property="titleLabel" destination="K9s-xT-Nrk" id="46Y-Xz-zvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXO-6l-A6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260.8695652173915" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VDX-lV-Tyw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KUx-86-JAK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YLn-VW-K7F">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iZF-s8-dap"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axq-Y4-TjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="canada-flag" width="318" height="159"/>
+        <image name="francais" width="355" height="236"/>
+    </resources>
+</document>
